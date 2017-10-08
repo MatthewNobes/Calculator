@@ -1,0 +1,13 @@
+E:\CodingProjects\C#\Calculator1\Calculator1\bin\Debug\Calculator1.exe.config
+E:\MyFiles\CodingProjects\C#\Calculator1\Calculator1\bin\Debug\Calculator1.exe.config
+E:\MyFiles\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\Calculator1.csprojResolveAssemblyReference.cache
+E:\MyFiles\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+E:\MyFiles\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\Calculator1.csproj.GenerateResource.Cache
+E:\MyFiles\CodingProjects\C#\Calculator1\Calculator1\bin\Debug\Calculator1.exe
+E:\MyFiles\CodingProjects\C#\Calculator1\Calculator1\bin\Debug\Calculator1.pdb
+E:\MyFiles\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\Calculator1.exe
+E:\MyFiles\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\Calculator1.pdb
+E:\MyFiles\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\WindowsFormsApplication2.Calculator1.resources
+E:\Files\Current Files\CodingProjects\C#\Calculator1\Calculator1\bin\Debug\Calculator1.exe.config
+E:\Files\Current Files\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\Calculator1.exe
+E:\Files\Current Files\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\Calculator1.pdb
