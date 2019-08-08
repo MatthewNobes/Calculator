@@ -11,3 +11,13 @@ E:\MyFiles\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\WindowsFormsAppli
 E:\Files\Current Files\CodingProjects\C#\Calculator1\Calculator1\bin\Debug\Calculator1.exe.config
 E:\Files\Current Files\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\Calculator1.exe
 E:\Files\Current Files\CodingProjects\C#\Calculator1\Calculator1\obj\Debug\Calculator1.pdb
+C:\Users\Matt\Documents\GitHub\Calculator\Calculator1\Calculator1\bin\Debug\Calculator1.exe.config
+C:\Users\Matt\Documents\GitHub\Calculator\Calculator1\Calculator1\bin\Debug\Calculator1.exe
+C:\Users\Matt\Documents\GitHub\Calculator\Calculator1\Calculator1\bin\Debug\Calculator1.pdb
+C:\Users\Matt\Documents\GitHub\Calculator\Calculator1\Calculator1\obj\Debug\Calculator1.csprojAssemblyReference.cache
+C:\Users\Matt\Documents\GitHub\Calculator\Calculator1\Calculator1\obj\Debug\WindowsFormsApplication2.Calculator1.resources
+C:\Users\Matt\Documents\GitHub\Calculator\Calculator1\Calculator1\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\Matt\Documents\GitHub\Calculator\Calculator1\Calculator1\obj\Debug\Calculator1.csproj.GenerateResource.cache
+C:\Users\Matt\Documents\GitHub\Calculator\Calculator1\Calculator1\obj\Debug\Calculator1.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Documents\GitHub\Calculator\Calculator1\Calculator1\obj\Debug\Calculator1.exe
+C:\Users\Matt\Documents\GitHub\Calculator\Calculator1\Calculator1\obj\Debug\Calculator1.pdb

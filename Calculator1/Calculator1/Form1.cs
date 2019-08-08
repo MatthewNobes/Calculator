@@ -19,34 +19,7 @@ namespace WindowsFormsApplication2
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            if (rdbPlus.Checked)
-            {
-                int Dig1 = (Convert.ToInt32(txtNum1.Text));
-                int Dig2 = (Convert.ToInt32(txtNum2.Text));
-                int Answer = Dig1 + Dig2;
-                txtAnswer.Text = (Convert.ToString(Answer));
-            }
-            if (rdbDiv.Checked)
-            {
-                int Dig1 = (Convert.ToInt32(txtNum1.Text));
-                int Dig2 = (Convert.ToInt32(txtNum2.Text));
-                int Answer = Dig1 / Dig2;
-                txtAnswer.Text = (Convert.ToString(Answer));
-            }
-            if (rdbMul.Checked)
-            {
-                int Dig1 = (Convert.ToInt32(txtNum1.Text));
-                int Dig2 = (Convert.ToInt32(txtNum2.Text));
-                int Answer = Dig1 * Dig2;
-                txtAnswer.Text = (Convert.ToString(Answer));
-            }
-            if (rdbSub.Checked)
-            {
-                int Dig1 = (Convert.ToInt32(txtNum1.Text));
-                int Dig2 = (Convert.ToInt32(txtNum2.Text));
-                int Answer = Dig1 - Dig2;
-                txtAnswer.Text = (Convert.ToString(Answer));
-            }
+
         }
 
         private void txtPlus_Click(object sender, EventArgs e)
@@ -57,6 +30,262 @@ namespace WindowsFormsApplication2
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void TxtNum1_TextChanged(object sender, EventArgs e)
+        {
+            //Performs presence check for first number textbox.
+            if (txtNum1.Text == "")
+            {
+                txtAnswer.Text = txtAnswer.Text;
+            }
+            else
+            {
+                //Performs presence check for secound number textbox.
+                if (txtNum2.Text == "")
+                {
+                    txtAnswer.Text = txtAnswer.Text;
+                }
+                else
+                {
+                   
+                    string oper = "+";
+                    if (rdbDiv.Checked)
+                    {
+                        oper = "/";
+                    }
+                    if (rdbMul.Checked)
+                    {
+                        oper = "*";
+                    }
+                    if (rdbSub.Checked)
+                    {
+                        oper = "-";
+                    }
+                    int dig1 = Convert.ToInt32(txtNum1.Text);
+                    int dig2 = Convert.ToInt32(txtNum2.Text);
+                    int answer = runCalc(dig1, dig2, oper);
+
+                    txtAnswer.Text = (Convert.ToString(answer));
+                }
+
+            }
+            
+        }
+
+        public static int runCalc(int num1, int num2, string sign)
+            {
+            int Answer;
+            switch (sign)
+            {
+                case "*":
+                    Answer = num1 * num2;
+                    break;
+                case "/":
+                    Answer = num1 / num2;
+                    break;
+                case "-":
+                    Answer = num1 - num2;
+                    break;
+                default:
+                    Answer = num1 + num2;
+                    break;
+            }   
+            return Answer;
+        }
+
+        private void TxtNum2_TextChanged(object sender, EventArgs e)
+        {
+            //Performs presence check for first number textbox.
+            if (txtNum1.Text == "")
+            {
+                txtAnswer.Text = txtAnswer.Text;
+            }
+            else
+            {
+                //Performs presence check for secound number textbox.
+                if (txtNum2.Text == "")
+                {
+                    txtAnswer.Text = txtAnswer.Text;
+                }
+                else
+                {
+                    string oper = "+";
+                    if (rdbDiv.Checked)
+                    {
+                        oper = "/";
+                    }
+                    if (rdbMul.Checked)
+                    {
+                        oper = "*";
+                    }
+                    if (rdbSub.Checked)
+                    {
+                        oper = "-";
+                    }
+                    int dig1 = Convert.ToInt32(txtNum1.Text);
+                    int dig2 = Convert.ToInt32(txtNum2.Text);
+                    int answer = runCalc(dig1, dig2, oper);
+
+                    txtAnswer.Text = (Convert.ToString(answer));
+                }
+            }
+        }
+
+        private void RdbPlus_CheckedChanged(object sender, EventArgs e)
+        {
+                //Performs presence check for first number textbox.
+                if (txtNum1.Text == "")
+                {
+                    txtAnswer.Text = txtAnswer.Text;
+                }
+                else
+                {
+                    //Performs presence check for secound number textbox.
+                    if (txtNum2.Text == "")
+                    {
+                        txtAnswer.Text = txtAnswer.Text;
+                    }
+                    else
+                    {
+                        string oper = "+";
+                        if (rdbDiv.Checked)
+                        {
+                            oper = "/";
+                        }
+                        if (rdbMul.Checked)
+                        {
+                            oper = "*";
+                        }
+                        if (rdbSub.Checked)
+                        {
+                            oper = "-";
+                        }
+                        int dig1 = Convert.ToInt32(txtNum1.Text);
+                        int dig2 = Convert.ToInt32(txtNum2.Text);
+                        int answer = runCalc(dig1, dig2, oper);
+
+                        txtAnswer.Text = (Convert.ToString(answer));
+                    }
+
+                }
+            }
+
+        private void RdbDiv_CheckedChanged(object sender, EventArgs e)
+        {
+            //Performs presence check for first number textbox.
+            if (txtNum1.Text == "")
+            {
+                txtAnswer.Text = txtAnswer.Text;
+            }
+            else
+            {
+                //Performs presence check for secound number textbox.
+                if (txtNum2.Text == "")
+                {
+                    txtAnswer.Text = txtAnswer.Text;
+                }
+                else
+                {
+                    string oper = "+";
+                    if (rdbDiv.Checked)
+                    {
+                        oper = "/";
+                    }
+                    if (rdbMul.Checked)
+                    {
+                        oper = "*";
+                    }
+                    if (rdbSub.Checked)
+                    {
+                        oper = "-";
+                    }
+                    int dig1 = Convert.ToInt32(txtNum1.Text);
+                    int dig2 = Convert.ToInt32(txtNum2.Text);
+                    int answer = runCalc(dig1, dig2, oper);
+
+                    txtAnswer.Text = (Convert.ToString(answer));
+                }
+
+            }
+        }
+
+        private void RdbSub_CheckedChanged(object sender, EventArgs e)
+        {
+            //Performs presence check for first number textbox.
+            if (txtNum1.Text == "")
+            {
+                txtAnswer.Text = txtAnswer.Text;
+            }
+            else
+            {
+                //Performs presence check for secound number textbox.
+                if (txtNum2.Text == "")
+                {
+                    txtAnswer.Text = txtAnswer.Text;
+                }
+                else
+                {
+                    string oper = "+";
+                    if (rdbDiv.Checked)
+                    {
+                        oper = "/";
+                    }
+                    if (rdbMul.Checked)
+                    {
+                        oper = "*";
+                    }
+                    if (rdbSub.Checked)
+                    {
+                        oper = "-";
+                    }
+                    int dig1 = Convert.ToInt32(txtNum1.Text);
+                    int dig2 = Convert.ToInt32(txtNum2.Text);
+                    int answer = runCalc(dig1, dig2, oper);
+
+                    txtAnswer.Text = (Convert.ToString(answer));
+                }
+
+            }
+        }
+
+        private void RdbMul_CheckedChanged(object sender, EventArgs e)
+        {
+            //Performs presence check for first number textbox.
+            if (txtNum1.Text == "")
+            {
+                txtAnswer.Text = txtAnswer.Text;
+            }
+            else
+            {
+                //Performs presence check for secound number textbox.
+                if (txtNum2.Text == "")
+                {
+                    txtAnswer.Text = txtAnswer.Text;
+                }
+                else
+                {
+                    string oper = "+";
+                    if (rdbDiv.Checked)
+                    {
+                        oper = "/";
+                    }
+                    if (rdbMul.Checked)
+                    {
+                        oper = "*";
+                    }
+                    if (rdbSub.Checked)
+                    {
+                        oper = "-";
+                    }
+                    int dig1 = Convert.ToInt32(txtNum1.Text);
+                    int dig2 = Convert.ToInt32(txtNum2.Text);
+                    int answer = runCalc(dig1, dig2, oper);
+
+                    txtAnswer.Text = (Convert.ToString(answer));
+                }
+
+            }
         }
     }
 }
