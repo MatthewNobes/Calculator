@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsApplication2
 {
     public partial class Calculator1 : Form
@@ -15,6 +16,7 @@ namespace WindowsFormsApplication2
         public Calculator1()
         {
             InitializeComponent();
+
         }
 
         private void btnGo_Click(object sender, EventArgs e)
@@ -34,47 +36,45 @@ namespace WindowsFormsApplication2
 
         private void TxtNum1_TextChanged(object sender, EventArgs e)
         {
-            //Performs presence check for first number textbox.
-            if (txtNum1.Text == "")
-            {
-                txtAnswer.Text = txtAnswer.Text;
-            }
-            else
-            {
-                //Performs presence check for secound number textbox.
-                if (txtNum2.Text == "")
-                {
-                    txtAnswer.Text = txtAnswer.Text;
-                }
-                else
-                {
-                   
-                    string oper = "+";
-                    if (rdbDiv.Checked)
-                    {
-                        oper = "/";
-                    }
-                    if (rdbMul.Checked)
-                    {
-                        oper = "*";
-                    }
-                    if (rdbSub.Checked)
-                    {
-                        oper = "-";
-                    }
-                    int dig1 = Convert.ToInt32(txtNum1.Text);
-                    int dig2 = Convert.ToInt32(txtNum2.Text);
-                    int answer = runCalc(dig1, dig2, oper);
 
-                    txtAnswer.Text = (Convert.ToString(answer));
-                }
 
-            }
-            
+        }
+
+        private void TxtNum2_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void RdbPlus_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RdbDiv_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RdbSub_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RdbMul_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void Calculator1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void Txt_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         public static int runCalc(int num1, int num2, string sign)
-            {
+        {
             int Answer;
             switch (sign)
             {
@@ -90,202 +90,58 @@ namespace WindowsFormsApplication2
                 default:
                     Answer = num1 + num2;
                     break;
-            }   
+            }
             return Answer;
         }
 
-        private void TxtNum2_TextChanged(object sender, EventArgs e)
+        private void Calculator1_KeyDown(object sender, KeyEventArgs e)
         {
-            //Performs presence check for first number textbox.
-            if (txtNum1.Text == "")
+            if (e.KeyCode == Keys.D1)
             {
-                txtAnswer.Text = txtAnswer.Text;
-            }
-            else
-            {
-                //Performs presence check for secound number textbox.
-                if (txtNum2.Text == "")
-                {
-                    txtAnswer.Text = txtAnswer.Text;
-                }
-                else
-                {
-                    string oper = "+";
-                    if (rdbDiv.Checked)
-                    {
-                        oper = "/";
-                    }
-                    if (rdbMul.Checked)
-                    {
-                        oper = "*";
-                    }
-                    if (rdbSub.Checked)
-                    {
-                        oper = "-";
-                    }
-                    int dig1 = Convert.ToInt32(txtNum1.Text);
-                    int dig2 = Convert.ToInt32(txtNum2.Text);
-                    int answer = runCalc(dig1, dig2, oper);
-
-                    txtAnswer.Text = (Convert.ToString(answer));
-                }
+                MessageBox.Show("1 key works");
             }
         }
 
-        private void RdbPlus_CheckedChanged(object sender, EventArgs e)
+        private void TxtSum_KeyDown(object sender, KeyEventArgs e)
         {
-                //Performs presence check for first number textbox.
-                if (txtNum1.Text == "")
-                {
-                    txtAnswer.Text = txtAnswer.Text;
-                }
-                else
-                {
-                    //Performs presence check for secound number textbox.
-                    if (txtNum2.Text == "")
-                    {
-                        txtAnswer.Text = txtAnswer.Text;
-                    }
-                    else
-                    {
-                        string oper = "+";
-                        if (rdbDiv.Checked)
-                        {
-                            oper = "/";
-                        }
-                        if (rdbMul.Checked)
-                        {
-                            oper = "*";
-                        }
-                        if (rdbSub.Checked)
-                        {
-                            oper = "-";
-                        }
-                        int dig1 = Convert.ToInt32(txtNum1.Text);
-                        int dig2 = Convert.ToInt32(txtNum2.Text);
-                        int answer = runCalc(dig1, dig2, oper);
-
-                        txtAnswer.Text = (Convert.ToString(answer));
-                    }
-
-                }
-            }
-
-        private void RdbDiv_CheckedChanged(object sender, EventArgs e)
-        {
-            //Performs presence check for first number textbox.
-            if (txtNum1.Text == "")
+            int dig = 0;
+            switch (e.KeyCode)
             {
-                txtAnswer.Text = txtAnswer.Text;
+                case Keys.D1:
+                    dig = 1;
+                    break;
+                case Keys.D2:
+                    dig = 2;
+                    break;
+                case Keys.D3:
+                    dig = 3;
+                    break;
+                case Keys.D4:
+                    dig = 4;
+                    break;
+                case Keys.D5:
+                    dig = 5;
+                    break;
+                case Keys.D6:
+                    dig = 6;
+                    break;
+                case Keys.D7:
+                    dig = 7;
+                    break;
+                case Keys.D8:
+                    dig = 8;
+                    break;
+                case Keys.D9:
+                    dig = 9;
+                    break;
+                case Keys.D0:
+                    dig = 0;
+                    break;
+                default:
+                    break;
             }
-            else
-            {
-                //Performs presence check for secound number textbox.
-                if (txtNum2.Text == "")
-                {
-                    txtAnswer.Text = txtAnswer.Text;
-                }
-                else
-                {
-                    string oper = "+";
-                    if (rdbDiv.Checked)
-                    {
-                        oper = "/";
-                    }
-                    if (rdbMul.Checked)
-                    {
-                        oper = "*";
-                    }
-                    if (rdbSub.Checked)
-                    {
-                        oper = "-";
-                    }
-                    int dig1 = Convert.ToInt32(txtNum1.Text);
-                    int dig2 = Convert.ToInt32(txtNum2.Text);
-                    int answer = runCalc(dig1, dig2, oper);
-
-                    txtAnswer.Text = (Convert.ToString(answer));
-                }
-
-            }
-        }
-
-        private void RdbSub_CheckedChanged(object sender, EventArgs e)
-        {
-            //Performs presence check for first number textbox.
-            if (txtNum1.Text == "")
-            {
-                txtAnswer.Text = txtAnswer.Text;
-            }
-            else
-            {
-                //Performs presence check for secound number textbox.
-                if (txtNum2.Text == "")
-                {
-                    txtAnswer.Text = txtAnswer.Text;
-                }
-                else
-                {
-                    string oper = "+";
-                    if (rdbDiv.Checked)
-                    {
-                        oper = "/";
-                    }
-                    if (rdbMul.Checked)
-                    {
-                        oper = "*";
-                    }
-                    if (rdbSub.Checked)
-                    {
-                        oper = "-";
-                    }
-                    int dig1 = Convert.ToInt32(txtNum1.Text);
-                    int dig2 = Convert.ToInt32(txtNum2.Text);
-                    int answer = runCalc(dig1, dig2, oper);
-
-                    txtAnswer.Text = (Convert.ToString(answer));
-                }
-
-            }
-        }
-
-        private void RdbMul_CheckedChanged(object sender, EventArgs e)
-        {
-            //Performs presence check for first number textbox.
-            if (txtNum1.Text == "")
-            {
-                txtAnswer.Text = txtAnswer.Text;
-            }
-            else
-            {
-                //Performs presence check for secound number textbox.
-                if (txtNum2.Text == "")
-                {
-                    txtAnswer.Text = txtAnswer.Text;
-                }
-                else
-                {
-                    string oper = "+";
-                    if (rdbDiv.Checked)
-                    {
-                        oper = "/";
-                    }
-                    if (rdbMul.Checked)
-                    {
-                        oper = "*";
-                    }
-                    if (rdbSub.Checked)
-                    {
-                        oper = "-";
-                    }
-                    int dig1 = Convert.ToInt32(txtNum1.Text);
-                    int dig2 = Convert.ToInt32(txtNum2.Text);
-                    int answer = runCalc(dig1, dig2, oper);
-
-                    txtAnswer.Text = (Convert.ToString(answer));
-                }
-
-            }
+            
+            txtSum.Text += Convert.ToString(dig);
         }
     }
 }
