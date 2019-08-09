@@ -60,7 +60,8 @@ namespace WindowsFormsApplication2
                 {
                     case Keys.D1:
                         dig = 1;
-                        break               case Keys.D2:
+                        break;
+                    case Keys.D2:
                         dig = 2;
                         break;
                     case Keys.D3:
@@ -97,26 +98,31 @@ namespace WindowsFormsApplication2
                 if (e.KeyCode == Keys.Multiply)
                 {
                     oper = "*";
-                    txtSum.Text += Convert.ToString(oper);
+                    txtSum.Text += oper;
                 }
                 else if (e.KeyCode == Keys.Subtract)
                 {
                     oper = "-";
-                    txtSum.Text += Convert.ToString(oper);
+                    txtSum.Text += oper;
                 }
                 else if (e.KeyCode == Keys.Add)
                 {
                     oper = "+";
-                    txtSum.Text += Convert.ToString(oper);
+                    txtSum.Text += oper;
                 }
                 else if (e.KeyCode == Keys.Divide)
                 {
                     oper = "/";
-                    txtSum.Text += Convert.ToString(oper);
+                    txtSum.Text += oper;
                 }
 
 
             }
+        }
+
+        private void TxtPlus_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

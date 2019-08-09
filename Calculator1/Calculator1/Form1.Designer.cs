@@ -31,6 +31,11 @@
             this.txtSum = new System.Windows.Forms.TextBox();
             this.lblEquals = new System.Windows.Forms.Label();
             this.txtAnswer = new System.Windows.Forms.TextBox();
+            this.txtPlus = new System.Windows.Forms.Button();
+            this.txtMultiply = new System.Windows.Forms.Button();
+            this.txtDivide = new System.Windows.Forms.Button();
+            this.txtSubtract = new System.Windows.Forms.Button();
+            this.txtEqual = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtSum
@@ -61,12 +66,63 @@
             this.txtAnswer.Size = new System.Drawing.Size(239, 22);
             this.txtAnswer.TabIndex = 8;
             // 
+            // txtPlus
+            // 
+            this.txtPlus.Location = new System.Drawing.Point(198, 64);
+            this.txtPlus.Name = "txtPlus";
+            this.txtPlus.Size = new System.Drawing.Size(75, 23);
+            this.txtPlus.TabIndex = 10;
+            this.txtPlus.Text = "+";
+            this.txtPlus.UseVisualStyleBackColor = true;
+            this.txtPlus.Click += new System.EventHandler(this.TxtPlus_Click);
+            // 
+            // txtMultiply
+            // 
+            this.txtMultiply.Location = new System.Drawing.Point(198, 93);
+            this.txtMultiply.Name = "txtMultiply";
+            this.txtMultiply.Size = new System.Drawing.Size(75, 23);
+            this.txtMultiply.TabIndex = 11;
+            this.txtMultiply.Text = "X";
+            this.txtMultiply.UseVisualStyleBackColor = true;
+            // 
+            // txtDivide
+            // 
+            this.txtDivide.Location = new System.Drawing.Point(198, 122);
+            this.txtDivide.Name = "txtDivide";
+            this.txtDivide.Size = new System.Drawing.Size(75, 23);
+            this.txtDivide.TabIndex = 12;
+            this.txtDivide.Text = "÷";
+            this.txtDivide.UseVisualStyleBackColor = true;
+            // 
+            // txtSubtract
+            // 
+            this.txtSubtract.Location = new System.Drawing.Point(198, 151);
+            this.txtSubtract.Name = "txtSubtract";
+            this.txtSubtract.Size = new System.Drawing.Size(75, 23);
+            this.txtSubtract.TabIndex = 13;
+            this.txtSubtract.Text = "-";
+            this.txtSubtract.UseVisualStyleBackColor = true;
+            // 
+            // txtEqual
+            // 
+            this.txtEqual.Location = new System.Drawing.Point(198, 180);
+            this.txtEqual.Name = "txtEqual";
+            this.txtEqual.Size = new System.Drawing.Size(75, 23);
+            this.txtEqual.TabIndex = 14;
+            this.txtEqual.Text = "=";
+            this.txtEqual.UseVisualStyleBackColor = true;
+            // 
             // Calculator1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(285, 71);
+            this.ClientSize = new System.Drawing.Size(285, 214);
+            this.Controls.Add(this.txtEqual);
+            this.Controls.Add(this.txtSubtract);
+            this.Controls.Add(this.txtDivide);
+            this.Controls.Add(this.txtMultiply);
+            this.Controls.Add(this.txtPlus);
             this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.lblEquals);
             this.Controls.Add(this.txtSum);
@@ -83,6 +139,11 @@
         private System.Windows.Forms.TextBox txtSum;
         private System.Windows.Forms.TextBox txtAnswer;
         private System.Windows.Forms.Label lblEquals;
+        private System.Windows.Forms.Button txtPlus;
+        private System.Windows.Forms.Button txtMultiply;
+        private System.Windows.Forms.Button txtDivide;
+        private System.Windows.Forms.Button txtSubtract;
+        private System.Windows.Forms.Button txtEqual;
     }
 }
 
